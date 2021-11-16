@@ -1,10 +1,18 @@
 body{
     margin:0px;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
 }
 
 header{
     background-color: rgb(120, 171, 238);
     height:300px;
+}
+
+h1{
+    color:#fff;
+    text-align: center;
+    font-size: 5em;
 }
 
 div.introBox{
@@ -16,9 +24,25 @@ div.introBox *{
     text-align: center;
 }
 
+div.recipePage{
+    background-color: rgb(253, 245, 234);
+    width:60%;
+    margin-left:4%;
+}
+
+div.foodBackground{
+    background-image: url("img/catarinas-lyxiga-fiskgratang.jpg");
+    background-repeat: repeat-x;
+    position: sticky;
+    height:100vh;
+    top:0px;
+    z-index:-1;
+}
+
 article.recipeArticle{
-    margin: 10px 15% 10px 15%;
+    margin: 30px 15% 30px 15%;
     height:960px;
+    border:1px solid black;
 }
 
 article.recipeArticle > h2{
@@ -34,32 +58,26 @@ article.recipeArticle > h3{
 article.recipeArticle ul{
     border:1px solid black;
     column-count:2;
-    padding: 10px 2% 10px 2%;
+    margin: 10px 14% 10px 14%;
 }
 
 article.recipeArticle ul li{
     list-style: none;
     line-height: 3em;
-    font-size: 1.2em;
+    font-size: 1.4em;
     margin-left: 20%;
 }
 
-
-div.recipePage{
-    background-color: rgb(253, 245, 234);
-    width:60%;
-    padding-top:30px;
-    padding-bottom:30px;
-    margin-left:4%;
+article.recipeArticle ol{
+    border:1px solid black;
 }
 
-h1{
-    color:#fff;
-    text-align: center;
-    font-size: 5em;
+article.recipeArticle ol li{
+    line-height: 2em;
+    font-size: 1.4em;
 }
 
 footer{
     background-color: rgb(31, 31, 94);
-    height:250px;
+    height:200px;
 }
