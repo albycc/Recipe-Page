@@ -6,13 +6,14 @@ body{
 
 header{
     background-color: rgb(120, 171, 238);
-    height:300px;
+    height:400px;
 }
 
 h1{
     color:#fff;
     text-align: center;
-    font-size: 5em;
+    font-size: 4em;
+    line-height: 5em;
 }
 
 div.introBox{
@@ -39,10 +40,41 @@ div.foodBackground{
     z-index:-1;
 }
 
+section.recipeColumn{
+    display:flex;
+}
+
 article.recipeArticle{
-    margin: 30px 15% 30px 15%;
-    height:960px;
-    border:1px solid black;
+    flex-basis: 50%;
+    min-height:860px;
+    /* border:1px solid black; */
+    padding-bottom:80px;
+    padding-top:40px;
+}
+
+img.recipeImage{
+    height:auto;
+    object-fit:cover;
+}
+
+.ten{
+    width:10%;
+}
+
+.forty{
+    width:40%;
+}
+
+.light-beige{
+    background-color: rgb(253, 245, 234);
+}
+
+.light-green{
+    background-color: rgb(234, 253, 234);
+}
+
+.light-pink{
+    background-color: rgb(251, 234, 253);
 }
 
 article.recipeArticle > h2{
@@ -56,7 +88,7 @@ article.recipeArticle > h3{
 }
 
 article.recipeArticle ul{
-    border:1px solid black;
+    /* border:1px solid black; */
     column-count:2;
     margin: 10px 14% 10px 14%;
 }
@@ -69,7 +101,9 @@ article.recipeArticle ul li{
 }
 
 article.recipeArticle ol{
-    border:1px solid black;
+    /* border:1px solid black; */
+    margin-left:10%;
+    margin-right:10%;
 }
 
 article.recipeArticle ol li{
@@ -78,6 +112,6 @@ article.recipeArticle ol li{
 }
 
 footer{
-    background-color: rgb(31, 31, 94);
+    background-color: rgb(60, 60, 82);
     height:200px;
 }
