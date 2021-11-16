@@ -1,0 +1,65 @@
+body{
+    margin:0px;
+}
+
+header{
+    background-color: rgb(120, 171, 238);
+    height:300px;
+}
+
+div.introBox{
+    background-color: #fff;
+    height:300px;
+}
+
+div.introBox *{
+    text-align: center;
+}
+
+article.recipeArticle{
+    margin: 10px 15% 10px 15%;
+    height:960px;
+}
+
+article.recipeArticle > h2{
+    text-align: center;
+    font-size: 3em;
+}
+
+article.recipeArticle > h3{
+    text-align: center;
+    font-size: 1.8em;
+}
+
+article.recipeArticle ul{
+    border:1px solid black;
+    column-count:2;
+    padding: 10px 2% 10px 2%;
+}
+
+article.recipeArticle ul li{
+    list-style: none;
+    line-height: 3em;
+    font-size: 1.2em;
+    margin-left: 20%;
+}
+
+
+div.recipePage{
+    background-color: rgb(253, 245, 234);
+    width:60%;
+    padding-top:30px;
+    padding-bottom:30px;
+    margin-left:4%;
+}
+
+h1{
+    color:#fff;
+    text-align: center;
+    font-size: 5em;
+}
+
+footer{
+    background-color: rgb(31, 31, 94);
+    height:250px;
+}
