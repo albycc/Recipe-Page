@@ -1,47 +1,100 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bona+Nova&family=Indie+Flower&family=Leckerli+One&family=Mate+SC&family=Merriweather:wght@300&family=Outfit&family=PT+Serif&family=Sorts+Mill+Goudy&display=swap');body{
     margin:0px;
-    font-family: Arial, sans-serif;
     background-color: #fff;
 }
 
 header{
-    background-color: rgb(120, 171, 238);
-    height:400px;
+    background-color: #fff;
+    height:auto;
+}
+
+body{
+    background-color: rgb(236, 236, 236);
 }
 
 h1{
-    color:#fff;
+    color:rgb(37, 37, 37);
     text-align: center;
-    font-size: 4em;
-    line-height: 5em;
+    font-size: 500%;
+    margin:0;
+    font-family: 'Amatic SC', cursive;
+}
+
+p.authorText{
+    font-size: 1.8em;
+    margin-top:-30px;
+    margin-bottom:70px;
+    color: rgb(124, 124, 124);
+}
+
+nav.header-menu{
+    display:flex;
+    justify-content: center;
+}
+
+nav.header-menu > a{
+    margin:15px 20px 15px 20px;
+    font-size: 1.4em;
+    color:rgb(27, 27, 27);
+}
+
+nav.header-menu > a:link{
+    text-decoration: none;
 }
 
 div.introBox{
     background-color: #fff;
-    height:300px;
+    min-height:960px;
+    padding: 40px;
+    width:76%;
+    margin:20px 12% 20px 12%;
 }
 
 div.introBox *{
     text-align: center;
 }
 
+h2{
+    font-size: 3em;
+    font-family: 'PT Serif', serif;
+}
+
+p{
+    font-size: 2em;
+    font-family: 'PT Serif', serif;
+    margin-left:15%;
+    margin-right:15%;
+}
+
+div.recipeWrapper{
+    display:grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+}
+
 div.recipePage{
     background-color: rgb(253, 245, 234);
-    width:60%;
-    margin-left:4%;
+    width:55%;
+    margin-left:5%;
+    grid-column:1;
+    grid-row:1;
+    z-index:1;
+    padding:0 7% 0 7%;
+    box-sizing: border-box;
+    min-height:2000px;
+    font-family: 'PT Serif', serif;
 }
 
 div.foodBackground{
-    background-image: url("img/catarinas-lyxiga-fiskgratang.jpg");
+    background-image: url("img/Toast-Skagen-med-lojrom-pa-grillat-surdegsbrod-foto-Nurlan-Emir-Mathem.jpg");
     background-repeat: repeat-x;
+    background-position-x: 1200px;
+    background-size: 100vh;
     position: sticky;
     height:100vh;
     top:0px;
-    z-index:-1;
-}
-
-section.recipeColumn{
-    display:flex;
+    grid-column:1;
+    grid-row:1;
 }
 
 article.recipeArticle{
@@ -57,58 +110,105 @@ img.recipeImage{
     object-fit:cover;
 }
 
-.ten{
-    width:10%;
-}
-
-.forty{
-    width:40%;
-}
-
-.light-beige{
-    background-color: rgb(253, 245, 234);
-}
-
-.light-green{
-    background-color: rgb(234, 253, 234);
-}
-
-.light-pink{
-    background-color: rgb(251, 234, 253);
-}
-
 article.recipeArticle > h2{
     text-align: center;
-    font-size: 3em;
+    font-size: 3.8em;
+    font-family: 'Leckerli One', cursive;
 }
 
 article.recipeArticle > h3{
     text-align: center;
     font-size: 1.8em;
+    font-family: 'Mate SC', serif;
 }
 
-article.recipeArticle ul{
+p.recipeIntro{
+    font-size: 1.4em;
+    margin: 10px 50px 10px 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+div.factBox{
+    border:2px dashed black;
+    width:100%;
+    min-height: 100px;
+    padding:0 35px 0 45px;
+    box-sizing: border-box;
+    margin: 40px 0 20px 0;
+}
+
+div.factBox p{
+    color:rgb(66, 66, 66);
+    font-size: 1.6em;
+    font-family: 'Merriweather', serif;
+}
+
+div.recipe-instructions-wrapper{
+    display:flex;
+    margin-top:50px;
+}
+
+div.recipe-instructions-wrapper ul{
     /* border:1px solid black; */
-    column-count:2;
-    margin: 10px 14% 10px 14%;
+    width:40%;
+    padding:0;
 }
 
-article.recipeArticle ul li{
+div.recipe-instructions-wrapper ul li{
+    color: rgb(44, 44, 44);
     list-style: none;
-    line-height: 3em;
+    margin-bottom: 30px;
     font-size: 1.4em;
-    margin-left: 20%;
+    font-family: 'Outfit', sans-serif;
 }
 
-article.recipeArticle ol{
+div.recipe-instructions-wrapper ol{
     /* border:1px solid black; */
-    margin-left:10%;
-    margin-right:10%;
+    width:60%;
 }
 
-article.recipeArticle ol li{
-    line-height: 2em;
+div.recipe-instructions-wrapper ol li{
+    margin-bottom: 40px;
     font-size: 1.4em;
+    word-spacing: 0.1em;
+}
+
+div.linkWrapper{
+    display:flex;
+    justify-content: space-around;
+    flex-flow: wrap row;
+}
+
+figure.link-image-container{
+    width:220;
+    height:250px;
+    margin:0;
+    box-sizing: border-box;
+}
+
+figure.link-image-container > img{
+    width:200px;
+    height:200px;
+    object-fit: cover;
+}
+
+a.linkContainer:link{
+    text-decoration: none;
+}
+
+a.linkContainer:visited{
+    text-decoration: blue;
+}
+
+figure.link-image-container > figcaption{
+    text-align: center;
+    line-height: 2em;
+    color:rgb(27, 27, 179);
+}
+
+figure.link-image-container > figcaption:link{
+    text-decoration: none;
 }
 
 footer{
