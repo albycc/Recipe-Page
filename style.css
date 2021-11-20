@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bona+Nova&family=Indie+Flower&family=Leckerli+One&family=Mate+SC&family=Merriweather:wght@300&family=Outfit&family=PT+Serif&family=Sorts+Mill+Goudy&display=swap');body{
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Leckerli+One&family=Mate+SC&family=Merriweather:wght@300&family=Outfit&family=PT+Serif&display=swap');
+body{
     margin:0px;
     background-color: #fff;
 }
@@ -86,7 +87,7 @@ div.recipePage{
 .foodBackground{
     background-image: url("img/skagen.jpg");
     background-repeat: repeat-x;
-    background-position-x: 1380px;
+    background-position-x: 1200px;
     background-size: 100vh;
     position: sticky;
     width:100%;
@@ -102,10 +103,10 @@ div.recipePage{
     animation-duration: 1s;
 }
 
-@keyframes hoverBackground{
+/* @keyframes hoverBackground{
     from{background-position-x: 1330px;}
     to{background-position-x: 1380px;}
-}
+} */
 
 article.recipeArticle{
     flex-basis: 50%;
@@ -114,6 +115,7 @@ article.recipeArticle{
     padding-bottom:80px;
     padding-top:40px;
 }
+
 
 img.recipeImage{
     height:auto;
@@ -172,6 +174,12 @@ div.recipe-instructions-wrapper{
     margin-top:50px;
 }
 
+@media screen and (max-width: 480px){
+    div.recipe-instructions-wrapper{
+        flex-direction: column;
+    }
+}
+
 div.recipe-instructions-wrapper ul{
     /* border:1px solid black; */
     padding:0;
@@ -183,6 +191,10 @@ div.recipe-instructions-wrapper ul li{
     margin-bottom: 30px;
     font-size: 1.4em;
     font-family: 'Outfit', sans-serif;
+}
+
+div.recipePage-LeftColumn ul li span{
+    margin-left: 15px;
 }
 
 div.recipe-instructions-wrapper ol{
