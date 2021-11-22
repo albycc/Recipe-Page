@@ -87,7 +87,7 @@ div.recipePage{
 .foodBackground{
     background-image: url("img/skagen.jpg");
     background-repeat: repeat-x;
-    background-position-x: 1200px;
+    background-position-x: calc(100% + 30px);
     background-size: 100vh;
     position: sticky;
     width:100%;
@@ -172,11 +172,12 @@ div.factBox p{
 div.recipe-instructions-wrapper{
     display:flex;
     margin-top:50px;
+    flex-direction: column;
 }
 
-@media screen and (max-width: 480px){
+@media screen and (min-width: 1000px){
     div.recipe-instructions-wrapper{
-        flex-direction: column;
+        flex-direction: row;
     }
 }
 
